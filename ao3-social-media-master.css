@@ -1,0 +1,845 @@
+/* ============================================================
+   AO3 WORKSKINS MASTER CSS LIBRARY
+   v1 — Master collection of platform workskins
+   Platforms: Twitter/X, Reddit, Tumblr, iMessage
+   
+   All rules prefixed with #workskin per AO3 compliance
+   No rem units, no CSS variables, no gap/flex-wrap/grid
+   All margin/padding using longhand (no shorthands)
+   ============================================================ */
+
+/* ============================================================
+   SHARED UTILITIES
+   ============================================================ */
+
+#workskin .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* ============================================================
+   TWITTER / X WORKSKIN
+   ============================================================ */
+
+
+/* ── Blanket margin/padding reset — overrides all AO3 defaults inside .xcom ── */
+#workskin .xcom * {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ── Outer wrapper ── */
+#workskin .xcom {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #0f1419;
+  background-color: #ffffff;
+  max-width: 600px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 1px solid #eff3f4;
+  border-right: 1px solid #eff3f4;
+  text-align: left;
+}
+
+/* ============================================================
+   MAIN TWEET
+   ============================================================ */
+
+#workskin .x-tweet {
+  padding: 12px 16px 0 16px;
+  border-bottom: 1px solid #eff3f4;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: left;
+}
+
+/* Header: avatar float left, identity fills remaining space */
+#workskin .x-tweet__header {
+  overflow: hidden;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+#workskin .x-tweet__avatar {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 12px;
+  background-color: #eff3f4;
+}
+
+#workskin .x-tweet__avatar img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#workskin .x-tweet__identity {
+  overflow: hidden;
+  padding-top: 2px;
+  text-align: left;
+}
+
+/* p tags for display name and handle — margin reset prevents AO3 default spacing */
+#workskin .x-tweet__display-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: #0f1419;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: left;
+}
+
+#workskin .x-tweet__handle {
+  font-weight: 400;
+  font-size: 15px;
+  color: #536471;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: left;
+}
+
+#workskin .x-tweet__body {
+  font-size: 15px;
+  font-weight: 400;
+  color: #0f1419;
+  line-height: 24px;
+  margin-bottom: 12px;
+  word-wrap: break-word;
+  clear: both;
+  text-align: left;
+}
+
+#workskin .x-tweet__timestamp {
+  font-size: 15px;
+  color: #536471;
+  font-weight: 400;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+#workskin .x-tweet__divider {
+  height: 1px;
+  background-color: #eff3f4;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+#workskin .x-tweet__image {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+#workskin .x-tweet__image img {
+  width: 100%;
+  display: block;
+  border-radius: 32px;
+}
+
+#workskin .x-tweet--reply .x-tweet__image {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+/* ── Action bar — display:table proven reliable on AO3 ── */
+#workskin .x-tweet__actions {
+  display: table;
+  width: 100%;
+  padding: 4px 0;
+  box-sizing: border-box;
+}
+
+#workskin .x-tweet__action {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: #536471;
+  font-size: 13px;
+  padding: 8px 0;
+  white-space: nowrap;
+}
+
+#workskin .x-tweet__action img {
+  display: inline;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+}
+
+#workskin .x-tweet__action-group {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 8px 0;
+}
+
+#workskin .x-tweet__action-group .x-tweet__action {
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#workskin .x-tweet__action-group .x-tweet__action + .x-tweet__action {
+  margin-left: 4px;
+}
+
+/* ============================================================
+   REPLY TWEET
+   ============================================================ */
+
+#workskin .x-tweet--reply {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eff3f4;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Left column: float left, fixed width */
+#workskin .x-tweet--reply .x-tweet__left {
+  float: left;
+  width: 40px;
+  margin-right: 12px;
+  text-align: center;
+}
+
+#workskin .x-tweet--reply .x-tweet__avatar {
+  float: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #eff3f4;
+  margin-right: 0;
+}
+
+#workskin .x-tweet__thread-line {
+  display: block;
+  width: 2px;
+  min-height: 20px;
+  background-color: #cfd9de;
+  margin-top: 4px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Right column: overflow hidden creates block formatting context */
+#workskin .x-tweet--reply .x-tweet__right {
+  overflow: hidden;
+  text-align: left;
+}
+
+/* Reply header: p tag containing inline spans — p margin reset is critical */
+#workskin .x-tweet--reply .x-tweet__header {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: left;
+}
+
+#workskin .x-tweet--reply .x-tweet__header .x-tweet__display-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: #0f1419;
+}
+
+#workskin .x-tweet--reply .x-tweet__header .x-tweet__handle {
+  font-weight: 400;
+  font-size: 15px;
+  color: #536471;
+  margin-left: 4px;
+}
+
+#workskin .x-tweet__dot {
+  color: #536471;
+  font-size: 15px;
+  margin-left: 4px;
+}
+
+#workskin .x-tweet--reply .x-tweet__header .x-tweet__timestamp {
+  font-size: 15px;
+  color: #536471;
+  margin-left: 4px;
+}
+
+#workskin .x-tweet--reply .x-tweet__body {
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+  text-align: left;
+}
+
+#workskin .x-tweet--reply .x-tweet__actions {
+  display: table;
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+
+#workskin .x-tweet--reply .x-tweet__action {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: #536471;
+  font-size: 13px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 0;
+  padding-right: 0;
+  white-space: nowrap;
+  width: 25%;
+}
+
+#workskin .x-tweet--reply .x-tweet__action:first-child {
+  text-align: left;
+}
+
+#workskin .x-tweet--reply .x-tweet__action-group {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 0;
+  padding-right: 0;
+  width: auto;
+}
+
+#workskin .x-tweet--reply .x-tweet__action-group .x-tweet__action {
+  display: inline-block;
+  width: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#workskin .x-tweet--reply .x-tweet__action-group .x-tweet__action + .x-tweet__action {
+  margin-left: 16px;
+}
+
+/* ============================================================
+   REPLY COMPOSER STUB
+   ============================================================ */
+
+#workskin .x-composer {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eff3f4;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+#workskin .x-composer__avatar {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #eff3f4;
+  margin-right: 12px;
+}
+
+#workskin .x-composer__avatar img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#workskin .x-composer__button {
+  float: right;
+  display: inline-block;
+  background-color: #1d9bf0;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 9999px;
+  padding: 8px 16px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+#workskin .x-composer__field {
+  overflow: hidden;
+  font-size: 20px;
+  color: #536471;
+  font-weight: 400;
+  padding-top: 8px;
+  text-align: left;
+}
+
+/* ============================================================
+   THREAD GROUPING
+   ============================================================ */
+
+#workskin .x-thread {
+  border-bottom: 1px solid #eff3f4;
+}
+
+#workskin .x-thread .x-tweet--reply {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+#workskin .x-thread .x-tweet--reply:last-child {
+  padding-bottom: 12px;
+}
+
+/* ── Links ── */
+#workskin .xcom a {
+  color: #1d9bf0;
+  text-decoration: none;
+}
+
+#workskin .x-tweet a {
+  color: #1d9bf0;
+  text-decoration: none;
+}
+
+/* ============================================================
+   REDDIT WORKSKIN
+   ============================================================ */
+   #workskin .reddit {
+  background-color: #f8fafe;
+  border-radius: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: system-ui, -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+  max-width: 600px;
+  color: #333d42;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  text-align: left;
+}
+#workskin .reddit p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+#workskin .reddit-info {
+  font-size: 12px;
+  color: #1f6c9c;
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+#workskin .reddit-info::before {
+  float: left;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 32px;
+  width: 32px;
+}
+#workskin .reddit-info-box {
+  display: flex;
+  padding-left: 8px;
+  font-size: 12px;
+}
+#workskin .reddit-subreddit {
+  color: #0c3954;
+  font-weight: 700;
+}
+#workskin .reddit-post-time {
+  color: #1f6c9c;
+}
+#workskin .reddit-op {
+  font-size: 12px;
+  color: #363636;
+  line-height: 16px;
+}
+#workskin .reddit-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #021625;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-align: left;
+}
+#workskin .reddit-desc {
+  font-size: 14px;
+  color: rgb(12,57,84);
+  padding-bottom: 36px;
+  text-align: left;
+}
+#workskin .reddit-image {
+  margin-bottom: 36px;
+}
+#workskin .reddit-image img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+#workskin .reddit-replies {
+  margin-top: 20px;
+}
+#workskin .reddit-reply {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+}
+#workskin .reddit-username {
+  color: #021625;
+}
+#workskin .reddit-reply-body {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  padding-right: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+}
+#workskin .reddit-blockquote {
+  margin-left: 40px;
+}
+#workskin .reddit-flair {
+  color: #000;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+#workskin .reddit-team-flair {
+  background-color: #cbe2fc;
+  color: #000;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+#workskin .reddit-actions {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+#workskin .reddit-pill {
+  display: inline;
+  background-color: #E4E8EB;
+  border-radius: 20px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #141617;
+  margin-right: 8px;
+  white-space: nowrap;
+  line-height: 2.0;
+}
+#workskin .reddit-pill-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  display: inline;
+}
+#workskin .reddit-pill-count {
+  vertical-align: middle;
+}
+
+/* ============================================================
+   TUMBLR WORKSKIN
+   ============================================================ */
+
+   #workskin .tumblr-bg {
+  background: #011935;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 564px;
+}
+#workskin .tumblr * {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+#workskin .tumblr {
+  color: #000;
+  font-family: system-ui, -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  text-align: left;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#workskin .tumblr-has-reblog-header {
+  border-radius: 0 0 8px 8px;
+}
+#workskin .tumblr p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+#workskin .tumblr-reblog-from {
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+#workskin .tumblr-reblog-from .tumblr-header {
+  overflow: hidden;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-bottom: 1px solid rgba(0, 25, 53, 0.1);
+  text-align: left;
+}
+#workskin .tumblr-info {
+  background: #fff;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-bottom: 1px solid rgba(0, 25, 53, 0.1);
+  text-align: left;
+}
+#workskin .tumblr-header {
+  overflow: hidden;
+  text-align: left;
+}
+#workskin .tumblr-avatar {
+  float: left;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #ddd;
+  margin-right: 10px;
+}
+#workskin .tumblr-avatar img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: block;
+}
+#workskin .tumblr-avatar-sm {
+  float: left;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #ddd;
+  margin-right: 8px;
+}
+#workskin .tumblr-avatar-sm img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: block;
+}
+#workskin .tumblr-more {
+  float: right;
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+#workskin .tumblr-avatar-wrap {
+  float: left;
+  position: relative;
+  width: 34px;
+  height: 44px;
+  margin-right: 10px;
+}
+#workskin .tumblr-reblog-badge {
+  position: absolute;
+  bottom: 0;
+  right: -2px;
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+#workskin .tumblr-meta {
+  overflow: hidden;
+  text-align: left;
+}
+#workskin .tumblr-blogname {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+  text-align: left;
+}
+#workskin .tumblr-date {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.65);
+  text-align: left;
+}
+#workskin .tumblr-reblogged-from {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.65);
+  text-align: left;
+}
+#workskin .tumblr-reblogged-name {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.65);
+}
+#workskin .tumblr-body {
+  background: #fff;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-bottom: 1px solid rgba(0, 25, 53, 0.1);
+  text-align: left;
+}
+#workskin .tumblr-post-image {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+#workskin .tumblr-text {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #000;
+  text-align: left;
+}
+#workskin .tumblr-text p {
+  margin-bottom: 8px;
+  text-align: left;
+}
+#workskin .tumblr-text blockquote {
+  border-left: 3px solid #ddd;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 0;
+  color: #555;
+  text-align: left;
+}
+#workskin .tumblr-reblog {
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 25, 53, 0.05);
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: left;
+}
+#workskin .tumblr-reblog-last {
+  border-bottom: none;
+}
+#workskin .tumblr-reblog-info {
+  overflow: hidden;
+  margin-bottom: 8px;
+  text-align: left;
+}
+#workskin .tumblr-tags {
+  background: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.65);
+  text-align: left;
+}
+#workskin .tumblr-tag {
+  margin-right: 6px;
+}
+#workskin .tumblr-footer {
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: left;
+}
+#workskin .tumblr-action {
+  display: table-cell;
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#workskin .tumblr-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+  vertical-align: middle;
+}
+#workskin .tumblr-count {
+  font-size: 13px;
+  font-weight: 700;
+  color: #4D5D72;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+/* ============================================================
+   IMESSAGE WORKSKIN
+   ... [iMessage section]
+   ============================================================ */
