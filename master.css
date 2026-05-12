@@ -83,6 +83,9 @@ body {
   overflow: hidden;
   text-align: left;
 }
+#workskin .x-tweet__body .highlight {
+  color: #3AA8F2;
+}
 
 #workskin .x-tweet__header {
   overflow: hidden;
@@ -812,6 +815,7 @@ body {
   display: block;
 }
 #workskin .tumblr-more {
+  display: inline-block;
   width: 20px;
   height: 20px;
   opacity: 0.5;
@@ -833,14 +837,20 @@ body {
   text-align: center;
 }
 #workskin .tumblr-avatar-wrap {
+  float: left;
   position: relative;
   width: 34px;
-  height: 44px;
+  height: 34px;
+  margin-right: 13px;
+}
+#workskin .tumblr-avatar-wrap .tumblr-avatar-sm {
+  float: none;
+  margin-right: 0;
 }
 #workskin .tumblr-reblog-badge {
   position: absolute;
   bottom: 0;
-  right: -2px;
+  right: -7px;
   width: 18px;
   height: 18px;
   display: block;
@@ -856,6 +866,9 @@ body {
   line-height: 1.2;
   text-align: left;
 }
+#workskin .tumblr-reblog .tumblr-blogname {
+  line-height: 34px;
+}
 #workskin .tumblr-reblogged-from {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.65);
@@ -869,8 +882,8 @@ body {
   background: #fff;
   padding-top: 12px;
   padding-bottom: 16px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 8px;
+  padding-right: 8px;
   text-align: left;
 }
 #workskin .tumblr-post-image {
