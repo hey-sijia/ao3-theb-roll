@@ -185,6 +185,15 @@ body {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+#workskin .x-tweet__image80 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+#workskin .x-tweet__image80 img {
+  width: 80%;
+  display: block;
+  border-radius: 32px;
+}
 
 /* ── Main tweet action bar ──
    First icon left-aligned to match body text, rest centred */
@@ -791,9 +800,11 @@ body {
 #workskin .tumblr-info-actions {
   display: table-cell;
   width: 1%;
+  min-width: 20px;
   white-space: nowrap;
   vertical-align: middle;
   text-align: right;
+   min-width: 20px;
 }
 #workskin .tumblr-avatar {
   width: 34px;
