@@ -575,6 +575,15 @@ body {
   line-height: 20px;
   text-align: left;
 }
+#workskin .reddit-reply-body img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
 #workskin .reddit-blockquote {
   margin-left: 40px;
 }
@@ -991,5 +1000,8 @@ body {
   margin-left: 4px;
 }
 #workskin .tumblr-action p {
+  display: inline;
+}
+#workskin .tumblr-info-actions p {
   display: inline;
 }
